@@ -24,3 +24,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* HEADER STYLES*/
+.container-logo {
+  @apply flex items-center gap-4 md:gap-8 lg:gap-12;
+}
+
+.link {
+  @apply text-sm leading-none text-[#0F172A] font-semibold md:text-base;
+}
