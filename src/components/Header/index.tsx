@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Indent from "../Common/Indent";
-import Button from "../Common/Indent/Button";
+import ButtonOutlined from "../Common/ButtonOutlined";
 
 export default function Header() {
   return (
@@ -35,7 +35,7 @@ export default function Header() {
             <a href="javascript:;" className="link whitespace-nowrap">
               Log In
             </a>
-            <Button label="Sign Up Now" colorDefault="#0F172A" />
+            <ButtonOutlined label="Sign Up Now" colorDefault="#0F172A" />
           </div>
         </div>
       </Indent>
