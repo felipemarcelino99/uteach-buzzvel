@@ -68,3 +68,98 @@ body {
 .list-item {
   @apply text-xl ps-2 leading-[1.8];
 }
+
+.card {
+  @apply p-4 bg-white rounded shadow-xl;
+}
+
+.card-type {
+  @apply py-0.5 px-2 rounded-sm capitalize;
+}
+
+.featured {
+  @apply bg-[#F3E8FF] text-[#6B21A8];
+}
+.popular {
+  @apply bg-[#DBEAFE] text-[#1E40AF];
+}
+.new {
+  @apply bg-[#DCFCE7] text-[#166534];
+}
+
+.card-title {
+  @apply text-xl font-medium leading-[1.1] my-2 text-left;
+}
+
+.card-description {
+  @apply text-sm leading-[1.4] mb-4 text-left;
+}
+
+.nav {
+  @apply flex items-center justify-center h-12 w-12 border-2 border-[#EA580C] rounded-full;
+}
+
+@layer utilities {
+  .after-carousel-detail {
+    position: relative;
+  }
+
+  .after-carousel-detail::after {
+    content: "";
+    position: absolute;
+    width: 690px;
+    height: 720px;
+    top: -55px;
+    right: 17%;
+    background: url("/images/carousel/detail-carousel.png") center center
+      no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+
+  .after-carousel-detail::before {
+    content: "";
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    bottom: 32px;
+    right: 38.5%;
+    background: url("/images/carousel/detail-carousel-item.png") center center
+      no-repeat;
+    background-size: 100% 100%;
+    z-index: 21;
+  }
+
+  .before-underline-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .before-underline-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    background: url("/images/title_detail.png") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .before-plane-image {
+    position: relative;
+    display: inline-block;
+  }
+
+  .before-plane-image::before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -40px;
+    width: 64px;
+    height: 64px;
+    background: url("/images/title_detail_2.png") no-repeat center center;
+    background-size: cover;
+  }
+}

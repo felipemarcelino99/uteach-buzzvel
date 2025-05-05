@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} antialiased font-[family-name:var(--font-roboto)]`}
+        className={`${roboto.variable} antialiased font-[family-name:var(--font-roboto)] overflow-x-hidden`}
       >
         <Header />
         {children}
