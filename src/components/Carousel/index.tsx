@@ -24,7 +24,7 @@ export default function Carousel() {
     <div ref={sliderRef} className="keen-slider z-10 w-full">
       {slides.map((n) => (
         <div key={n} className="keen-slider__slide">
-          <div className="flex items-center justify-between gap-20">
+          <div className="flex items-center gap-20">
             <div className="text-default max-w-[528px] w-full">
               <p>
                 Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu

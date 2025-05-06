@@ -1,9 +1,10 @@
+import Link from "next/link";
+import { LinkProps } from "next/link";
 import type { VariantProps } from "class-variance-authority";
 import { buttonVariants } from "./buttonVariants";
-import { ButtonHTMLAttributes } from "react";
 
-export interface IButtonProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
+export interface IButtonLinkProps
+  extends LinkProps,
     VariantProps<typeof buttonVariants> {
   widthFull?: boolean;
   label: string;
@@ -15,15 +16,15 @@ export default function ButtonLink({
   variant,
   size,
   ...props
-}: IButtonProps) {
+}: IButtonLinkProps) {
   const classes = buttonVariants({ variant, size });
 
   return (
-    <button
+    <Link
       className={`${widthFull ? "w-full max-w-full" : "w-fit"} ${classes}`}
       {...props}
     >
       {label}
-    </button>
+    </Link>
   );
 }

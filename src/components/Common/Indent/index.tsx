@@ -6,7 +6,7 @@ type IndentType = {
 
 export default function Indent({ children }: IndentType) {
   return (
-    <div className="w-full max-w-full px-5 md:px-0 md:max-w-[1280px] md:mx-auto">
+    <div className="w-full max-w-full px-4 lg:px-0 lg:max-w-[1280px] lg:w-[90%] lg:mx-auto">
       {children}
     </div>
   );

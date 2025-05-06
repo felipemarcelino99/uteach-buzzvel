@@ -1,25 +1,23 @@
+import Link, { LinkProps } from "next/link";
 import Image from "next/image";
-import React from "react";
 
-type LinkType = {
+interface ICustomLinkType extends LinkProps {
   label: string;
   color?: string;
   link?: string;
   className?: string;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+};
 
-export default function Link({
+export default function CustomLink({
   label,
   color = "#2563EB",
-  link = "#",
   className = "",
   ...props
-}: LinkType) {
+}: ICustomLinkType) {
   return (
-    <a
+    <Link
       className={`flex items-center gap-2.5 text-xl font-medium ${className}`}
       style={{ color }}
-      href={link}
       {...props}
     >
       <p>{label}</p>
@@ -29,6 +27,6 @@ export default function Link({
         width={14}
         height={13}
       />
-    </a>
+    </Link>
   );
 }

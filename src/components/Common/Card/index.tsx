@@ -1,19 +1,37 @@
 import React from "react";
-import ButtonOutlined from "../ButtonOutlined";
+import ButtonLink from "../ButtonLink";
+import { CardStyle } from "./cardEnums";
 
 type CardType = {
   title: string;
   description: string;
-  type: "featured" | "popular" | "new";
+  type: CardStyle;
+  className?: string;
 };
 
-export default function Card({ title, description, type }: CardType) {
+const cardTypeStyles: Record<CardStyle, string> = {
+  [CardStyle.Featured]: "bg-[#F3E8FF] text-[#6B21A8]",
+  [CardStyle.Popular]: "bg-[#DBEAFE] text-[#1E40AF]",
+  [CardStyle.New]: "bg-[#DCFCE7] text-[#166534]",
+};
+
+export default function Card({
+  title,
+  description,
+  type,
+  className,
+}: CardType) {
   return (
-    <div className="card">
-      <span className={`card-type ${type}`}>{type}</span>
+    <article className={`keen-slider__slide card ${className}`}>
+      <span className={`card-type ${cardTypeStyles[type]}`}>{type}</span>
       <h3 className="card-title">{title}</h3>
       <p className="card-description">{description}</p>
-      <ButtonOutlined label="Take Lesson" colorDefault="#2563EB" />
-    </div>
+      <ButtonLink
+        href="/"
+        label="Take Lesson"
+        variant={"outlineDefault"}
+        size="sm"
+      />
+    </article>
   );
 }
