@@ -4,6 +4,7 @@ import Indent from "../Common/Indent";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ButtonLink from "../Common/ButtonLink";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpened, setIsOpened] = useState(false);
@@ -12,14 +13,14 @@ export default function Header() {
     <header>
       <Indent>
         <div className="flex items-center justify-between py-4 md:py-0">
-          <a href="" className="block md:hidden">
+          <Link href="/" className="block md:hidden">
             <Image
               src="/images/logo.png"
               alt="Logo uTeach"
               width={103}
               height={35}
             />
-          </a>
+          </Link>
           <AnimatePresence>
             {(isOpened || typeof window !== "undefined") && (
               <motion.div
@@ -33,33 +34,36 @@ export default function Header() {
               >
                 <nav className="w-full max-w-full absolute flex-col items-center md:relative md:flex-row flex justify-between py-4 md:gap-5 md:py-8">
                   <div className="container-logo">
-                    <a href="javascript:;" role="img" aria-label="Logo uTeach">
+                    <Link href="" role="img" aria-label="Logo uTeach">
                       <Image
                         src="/images/logo.png"
                         alt="Logo uTeach"
                         width={103}
                         height={35}
                       />
-                    </a>
+                    </Link>
                     <ul className="container-logo">
                       <li className="link">
-                        <a>Products</a>
+                        <Link href="/">Products</Link>
                       </li>
                       <li className="link">
-                        <a>Solutions</a>
+                        <Link href="/">Solutions</Link>
                       </li>
                       <li className="link">
-                        <a>Pricing</a>
+                        <Link href="/">Pricing</Link>
                       </li>
                       <li className="link">
-                        <a>Resources</a>
+                        <Link href="/">Resources</Link>
                       </li>
                     </ul>
                   </div>
                   <div className="flex w-full max-w-fit items-center gap-6 mt-12 flex-col md:flex-row md:mt-0">
-                    <a href="javascript:;" className="link whitespace-nowrap">
+                    <Link
+                      href="javascript:;"
+                      className="link whitespace-nowrap"
+                    >
                       Log In
-                    </a>
+                    </Link>
                     <ButtonLink
                       href="/"
                       variant="outlineBlack"

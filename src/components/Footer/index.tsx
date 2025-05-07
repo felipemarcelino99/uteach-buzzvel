@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Indent from "../Common/Indent";
+import Link from "next/link";
+import { MENU_SECTIONS } from "./constants";
 
 export default function Footer() {
   return (
@@ -15,114 +17,39 @@ export default function Footer() {
             />
           </div>
           <div className="flex w-full items-start justify-start gap-8 flex-col md:flex-row md:gap-7 lg:gap-12 flex-wrap">
-            <div className="footer-block">
-              <ul>
-                <li>
-                  <a>Product</a>
-                </li>
-                <li>
-                  <a>Pricing</a>
-                </li>
-                <li>
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-                <li>
-                  <a>Accessibility</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-block">
-              <ul>
-                <li>
-                  <a>Product</a>
-                </li>
-                <li>
-                  <a>Pricing</a>
-                </li>
-                <li>
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-                <li>
-                  <a className="flex items-center gap-2">
-                    Accessibility{" "}
-                    <span className="flex items-center justify-center w-[45px] h-5 bg-[#F3E8FF] text-[#6B21A8] text-xs capitalize rounded-sm">
-                      BETA
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-block">
-              <ul>
-                <li>
-                  <a>Product</a>
-                </li>
-                <li>
-                  <a>Pricing</a>
-                </li>
-                <li>
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-block">
-              <ul>
-                <li>
-                  <a>Product</a>
-                </li>
-                <li>
-                  <a>Pricing</a>
-                </li>
-                <li>
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-                <li>
-                  <a>Accessibility</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-block">
-              <ul>
-                <li>
-                  <a>Product</a>
-                </li>
-                <li>
-                  <a>Pricing</a>
-                </li>
-                <li>
-                  <a>Overview</a>
-                </li>
-                <li>
-                  <a>Browse</a>
-                </li>
-                <li>
-                  <a className="flex items-center gap-2">
-                    Accessibility
-                    <Image
-                      src="/images/icons/arrow-right-gray.png"
-                      alt="Arrow right"
-                      width={14}
-                      height={13}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            {MENU_SECTIONS.map((item) => {
+              return (
+                <div className="footer-block" key={item.key}>
+                  <ul>
+                    <li>
+                      <Link href="/">{item.title}</Link>
+                    </li>
+                    {item.items.map((menu) => {
+                      return (
+                        <li key={menu.label}>
+                          <Link href="/" className="flex items-center gap-2">
+                            {menu.label}
+                            {menu?.tag && (
+                              <span className="flex items-center justify-center w-[45px] h-5 bg-[#F3E8FF] text-[#6B21A8] text-xs capitalize rounded-sm">
+                                {menu.tag}
+                              </span>
+                            )}
+                            {menu?.icon && (
+                              <Image
+                                src={menu.icon}
+                                alt={`${menu.label} icon`}
+                                width={14}
+                                height={13}
+                              />
+                            )}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="flex justify-between py-6 border-t-1 border-[#334155] gap-5 flex-col md:flex-row">
@@ -132,16 +59,16 @@ export default function Footer() {
           <div>
             <ul className="flex items-center flex-wrap gap-5 md:gap-8">
               <li>
-                <a>Terms</a>
+                <Link href="/">Terms</Link>
               </li>
               <li>
-                <a>Privacy</a>
+                <Link href="/">Privacy</Link>
               </li>
               <li>
-                <a>Contact</a>
+                <Link href="/">Contact</Link>
               </li>
               <li>
-                <a className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
                   EN
                   <Image
                     src="/images/icons/world.png"
@@ -149,10 +76,10 @@ export default function Footer() {
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
                   EUR
                   <Image
                     src="/images/icons/euro.png"
@@ -160,17 +87,17 @@ export default function Footer() {
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
               <li>
-                <a>
+                <Link href="/">
                   <Image
                     src="/images/icons/accessibility.png"
                     alt="Icon Accessibility"
                     width={24}
                     height={24}
                   />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
