@@ -5,6 +5,8 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ButtonLink from "../Common/ButtonLink";
 import Link from "next/link";
+import { ITEMS } from "./constants";
+import HeaderLink from "../Common/HeaderLink";
 
 export default function Header() {
   const [isOpened, setIsOpened] = useState(false);
@@ -45,18 +47,13 @@ export default function Header() {
                       />
                     </Link>
                     <ul className="container-logo">
-                      <li className="link">
-                        <Link href="/">Products</Link>
-                      </li>
-                      <li className="link">
-                        <Link href="/">Solutions</Link>
-                      </li>
-                      <li className="link">
-                        <Link href="/">Pricing</Link>
-                      </li>
-                      <li className="link">
-                        <Link href="/">Resources</Link>
-                      </li>
+                      {ITEMS.map((item) => {
+                        return (
+                          <HeaderLink key={item.id}>
+                            <Link href="/">{item.label}</Link>
+                          </HeaderLink>
+                        );
+                      })}
                     </ul>
                   </div>
                   <div className="flex w-full max-w-fit items-center gap-6 mt-12 flex-col md:flex-row md:mt-0">

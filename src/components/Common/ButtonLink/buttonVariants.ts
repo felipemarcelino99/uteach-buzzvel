@@ -5,8 +5,8 @@ export const buttonVariants = cva("button", {
     variant: {
       default: "bg-orange border-orange text-white",
       black: "bg-dark border-dark text-white",
-      outlineDefault: "border-blue text-blue",
-      outlineBlack: "border-dark text-dark",
+      outlineDefault: "border-blue text-blue hover:bg-blue hover:text-white",
+      outlineBlack: "border-dark text-dark hover:bg-dark hover:text-white",
     },
     size: {
       default:

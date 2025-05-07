@@ -1,3 +1,7 @@
+"use client";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 type TitleType = {
   label: string;
   semantic?: boolean;
@@ -6,13 +10,21 @@ type TitleType = {
   align?: "left" | "center" | "right";
 };
 
+const titleVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 export default function Title({
   label,
   semantic = false,
-  color = "#0F172A",
+  color = "dark",
   type = "sm",
   align = "left",
 }: TitleType) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5, once: true });
+
   const styles = {
     color: color,
     textAlign: align,
@@ -20,13 +32,19 @@ export default function Title({
 
   const sizeClasses = type === "sm" ? "title-sm" : "title-lg";
 
-  return semantic ? (
-    <h1 className={`title ${sizeClasses}`} style={styles}>
+  const MotionTag = semantic ? motion.h1 : motion.h2;
+
+  return (
+    <MotionTag
+      className={`title ${sizeClasses}`}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={titleVariants}
+      style={styles}
+      ref={ref}
+      aria-hidden
+    >
       {label}
-    </h1>
-  ) : (
-    <h2 className={`title ${sizeClasses}`} style={styles}>
-      {label}
-    </h2>
+    </MotionTag>
   );
 }

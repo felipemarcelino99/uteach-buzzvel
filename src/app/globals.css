@@ -61,7 +61,7 @@ body {
 }
 
 .link {
-  @apply text-lg text-center leading-none text-dark font-semibold md:text-base;
+  @apply text-lg text-center leading-none text-dark font-semibold md:text-base border-b-2 border-transparent hover:border-b-2 hover:border-dark transition-all ease-in;
 }
 
 .hamburger {
@@ -97,7 +97,7 @@ footer p {
 
 /* COMMON STYLES*/
 .button {
-  @apply border-2 rounded-lg block capitalize text-center font-semibold;
+  @apply border-2 rounded-lg block capitalize text-center font-semibold transition-all duration-300 ease-in active:ease-out active:scale-[.9] active:shadow-lg;
 }
 
 .button-sm {
@@ -157,7 +157,7 @@ footer p {
 }
 
 .nav {
-  @apply flex items-center justify-center h-12 w-12 border-2 border-orange rounded-full;
+  @apply flex items-center justify-center h-12 w-12 border-2 border-orange rounded-full active:shadow-md active:scale-[.9] transition-all ease-out;
 }
 
 #fRequest fieldset + fieldset {
@@ -284,7 +284,7 @@ footer p {
     position: absolute;
     width: 18px;
     height: 2px;
-    background-color: #0f172a;
+    background-color: var(--dark);
   }
 
   .hamburger::before {

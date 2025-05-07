@@ -1,11 +1,16 @@
-import React from "react";
+// Feedbacks.tsx
+"use client";
+
+import React, { useRef } from "react";
 import Indent from "../Common/Indent";
 import Title from "../Common/Title";
 import Image from "next/image";
-import CarouselFeedbacks from "./CarouselFeedbacks";
+import CarouselFeedbacks, { CarouselHandle } from "./CarouselFeedbacks";
 import { items } from "./constants";
 
 export default function Feedbacks() {
+  const carouselRef = useRef<CarouselHandle>(null);
+
   return (
     <section className="py-12 md:py-20 overflow-hidden">
       <Indent>
@@ -17,8 +22,8 @@ export default function Feedbacks() {
             <button
               type="button"
               className="nav"
+              onClick={() => carouselRef.current?.prev()}
               aria-label="Carousel nav previous"
-              id="nav_previous"
             >
               <Image
                 src="/images/icons/nav-left.webp"
@@ -28,21 +33,24 @@ export default function Feedbacks() {
                 loading="lazy"
               />
             </button>
-            <button type="button" className="nav">
+            <button
+              type="button"
+              className="nav"
+              onClick={() => carouselRef.current?.next()}
+              aria-label="Carousel nav next"
+            >
               <Image
                 src="/images/icons/nav-right.webp"
                 alt="Next"
                 width={13}
                 height={12}
-                aria-label="Carousel nav next"
-                id="nav_next"
                 loading="lazy"
               />
             </button>
           </div>
         </div>
       </Indent>
-      <CarouselFeedbacks items={items} />
+      <CarouselFeedbacks ref={carouselRef} items={items} />
     </section>
   );
 }
