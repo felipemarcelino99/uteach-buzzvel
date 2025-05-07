@@ -57,12 +57,12 @@ npm start
   property="og:description"
   content="A modern and responsive landing page for uTeach."
 />
-<meta property="og:image" content="/og-image.png" />
+<meta property="og:image" content="/og-image.webp" />
 <meta property="og:url" content="https://uteach-buzzvel.vercel.app" />
 <meta name="twitter:card" content="summary_large_image" />
 ```
 
-Place the image `og-image.png` in the `/public` directory.
+Place the image `og-image.webp` in the `/public` directory.
 
 ## 📁 Folder Structure
 
@@ -72,12 +72,6 @@ Place the image `og-image.png` in the `/public` directory.
 /styles       - Global styles
 /public       - Static assets
 ```
-
-## ✅ TODOs
-
-- [ ] Add more animations and hover effects
-- [ ] Improve accessibility for keyboard navigation
-- [ ] Add tests for key components
 
 ## 📄 License
 

@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --list: url("/images/list-bullet.png");
+  --list: url("/images/list-bullet.webp");
 }
 
 @theme inline {
@@ -97,7 +97,7 @@ footer p {
 }
 
 .custom-list {
-  @apply list-image-[url('/images/list-bullet.png')] mb-8 ps-5 md:mb-9 md:mt-6 lg:mb-12 lg:mt-8;
+  @apply list-image-[url('/images/list-bullet.webp')] mb-8 ps-5 md:mb-9 md:mt-6 lg:mb-12 lg:mt-8;
 }
 
 .custom-list li + li {
@@ -109,7 +109,7 @@ footer p {
 }
 
 .bg-about-app {
-  @apply bg-[url(/images/about_detail_mobile.png)] bg-[left_0px_bottom_115px] bg-no-repeat md:bg-[url(/images/about_detail.png)] md:bg-[calc(64%)_center] md:bg-no-repeat;
+  @apply bg-[url(/images/about_detail_mobile.webp)] bg-[left_0px_bottom_115px] bg-no-repeat md:bg-[url(/images/about_detail.webp)] md:bg-[calc(64%)_center] md:bg-no-repeat;
 }
 
 .card {
@@ -160,7 +160,7 @@ footer p {
     height: 176%;
     top: -145px;
     right: 40px;
-    background: url("/images/carousel/detail-carousel.png") center center
+    background: url("/images/carousel/detail-carousel.webp") center center
       no-repeat;
     background-size: 100% 100%;
     pointer-events: none;
@@ -173,7 +173,7 @@ footer p {
     height: 155px;
     bottom: -50px;
     right: 29.5%;
-    background: url("/images/carousel/detail-carousel-item.png") center center
+    background: url("/images/carousel/detail-carousel-item.webp") center center
       no-repeat;
     background-size: 100% 100%;
     pointer-events: none;
@@ -229,7 +229,7 @@ footer p {
     bottom: 0;
     width: 100%;
     height: 23px;
-    background: url("/images/title_detail.png") no-repeat center center;
+    background: url("/images/title_detail.webp") no-repeat center center;
     background-size: cover;
     z-index: -1;
   }
@@ -246,7 +246,7 @@ footer p {
     top: -40px;
     width: 64px;
     height: 64px;
-    background: url("/images/title_detail_2.png") no-repeat center center;
+    background: url("/images/title_detail_2.webp") no-repeat center center;
     background-size: cover;
   }
 

@@ -28,7 +28,7 @@ export default function StudentsWorldwide() {
                 className="flex items-center justify-between gap-4"
               >
                 <Image
-                  src="/images/icons/play.png"
+                  src="/images/icons/play.webp"
                   alt="Ícone play"
                   width={20}
                   height={20}
@@ -50,35 +50,35 @@ export default function StudentsWorldwide() {
 
               <div className="flex justify-start w-full max-w-full gap-4 items-start md:items-center md:gap-5 lg:gap-12">
                 <Image
-                  src="/images/icons/banner_top_1.png"
+                  src="/images/icons/banner_top_1.webp"
                   alt="Ícone 1"
                   width={25}
                   height={32}
                 />
 
                 <Image
-                  src="/images/icons/banner_top_2.png"
+                  src="/images/icons/banner_top_2.webp"
                   alt="Ícone 1"
                   width={29}
                   height={32}
                 />
 
                 <Image
-                  src="/images/icons/banner_top_3.png"
+                  src="/images/icons/banner_top_3.webp"
                   alt="Ícone 1"
                   width={32}
                   height={32}
                 />
 
                 <Image
-                  src="/images/icons/banner_top_4.png"
+                  src="/images/icons/banner_top_4.webp"
                   alt="Ícone 1"
                   width={27}
                   height={32}
                 />
 
                 <Image
-                  src="/images/icons/banner_top_5.png"
+                  src="/images/icons/banner_top_5.webp"
                   alt="Ícone 1"
                   width={33}
                   height={32}
@@ -93,7 +93,7 @@ export default function StudentsWorldwide() {
             className="max-w-[625px] w-full"
           >
             <Image
-              src="/images/image_banner_top.png"
+              src="/images/image_banner_top.webp"
               alt="Imagem banner"
               width={625}
               height={545}

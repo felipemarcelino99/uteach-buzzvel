@@ -60,7 +60,7 @@ export const MENU_SECTIONS: MenuSection[] = [
       { label: "Events" },
       {
         label: "Request Demo",
-        icon: "/images/icons/arrow-right-gray.png",
+        icon: "/images/icons/arrow-right-gray.webp",
       },
     ],
   },

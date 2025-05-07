@@ -8,7 +8,7 @@ export default function Impact() {
         <div className="flex gap-12 flex-col items-center justify-center md:items-stretch md:justify-evenly md:gap-4 md:flex-row">
           <div className="flex flex-col justify-between items-center h-full">
             <Image
-              src="/images/icons/hearth.png"
+              src="/images/icons/hearth.webp"
               width={64}
               height={64}
               alt="Icon hearth"
@@ -22,7 +22,7 @@ export default function Impact() {
           </div>
           <div className="flex flex-col justify-between items-center h-full">
             <Image
-              src="/images/icons/diamond.png"
+              src="/images/icons/diamond.webp"
               width={64}
               height={64}
               alt="Icon diamond"
@@ -36,7 +36,7 @@ export default function Impact() {
           </div>
           <div className="flex flex-col justify-between items-center h-full">
             <Image
-              src="/images/icons/student-hat.png"
+              src="/images/icons/student-hat.webp"
               width={64}
               height={64}
               alt="Icon student hat"

@@ -45,7 +45,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://uteach-buzzvel.vercel.app/images/og-image.png"
+          content="https://uteach-buzzvel.vercel.app/images/og-image.webp"
         />
         <meta property="og:url" content="https://uteach-buzzvel.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://uteach-buzzvel.vercel.app/images/og-image.png"
+          content="https://uteach-buzzvel.vercel.app/images/og-image.webp"
         />
       </Head>
 

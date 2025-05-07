@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex items-center justify-between py-4 md:py-0">
           <Link href="/" className="block md:hidden">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Logo uTeach"
               width={103}
               height={35}
@@ -36,7 +36,7 @@ export default function Header() {
                   <div className="container-logo">
                     <Link href="" aria-label="Logo uTeach">
                       <Image
-                        src="/images/logo.png"
+                        src="/images/logo.webp"
                         alt="Logo uTeach"
                         width={103}
                         height={35}

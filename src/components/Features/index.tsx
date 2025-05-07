@@ -23,7 +23,7 @@ export default function Features() {
             </p>
             <CustomLink href="/" label="View all the features" />
           </div>
-          <div className="max-w-full w-full flex flex-col justify-center pl-0 md:pl-2.5 gap-4 lg:pl-6 lg:gap-6 bg-[url(/images/bg-features-mobile.png)] bg-[right_top] bg-size-[auto] md:bg-[url(/images/bg-features.png)] md:bg-[center_left] md:bg-size-[contain] bg-no-repeat min-h-[469px] md:min-h-[550px]">
+          <div className="max-w-full w-full flex flex-col justify-center pl-0 md:pl-2.5 gap-4 lg:pl-6 lg:gap-6 bg-[url(/images/bg-features-mobile.webp)] bg-[right_top] bg-size-[auto] md:bg-[url(/images/bg-features.webp)] md:bg-[center_left] md:bg-size-[contain] bg-no-repeat min-h-[469px] md:min-h-[550px]">
             <div className="flex items-end gap-4 lg:gap-6 overflow-hidden">
               <Card
                 type={CardStyle.Featured}
@@ -33,7 +33,7 @@ export default function Features() {
               />
               <div className="relative max-w-[186px] w-full min-w-[186px] md:min-w-0">
                 <Image
-                  src="/images/img-features-1.png?v=123"
+                  src="/images/img-features-1.webp?v=123"
                   alt="Image meet"
                   width={186}
                   height={158}
@@ -41,7 +41,7 @@ export default function Features() {
                 />
                 <div className="max-w-20 rounded-full shadow-xl absolute bottom-4 right-[-40px]">
                   <Image
-                    src="/images/img-features-1-detail.png?v=123"
+                    src="/images/img-features-1-detail.webp?v=123"
                     alt="Image meet"
                     width={80}
                     height={80}
@@ -51,14 +51,14 @@ export default function Features() {
             </div>
             <div className="flex gap-6 overflow-hidden">
               <Image
-                src="/images/img-features-2.png?v=123"
+                src="/images/img-features-2.webp?v=123"
                 alt="Image meet"
                 width={304}
                 height={179}
                 className="shadow-xl max-w-[304px] w-full block h-auto min-w-[304px] md:min-w-0"
               />
               <Image
-                src="/images/img-features-3.png?v=123"
+                src="/images/img-features-3.webp?v=123"
                 alt="Image meet"
                 width={232}
                 height={179}

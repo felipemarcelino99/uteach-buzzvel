@@ -8,7 +8,7 @@ export default function Meet() {
       <Indent>
         <div className="flex items-center justify-center gap-11 flex-col-reverse md:flex-row">
           <Image
-            src="/images/meet.png"
+            src="/images/meet.webp"
             alt="Image meet"
             width={646}
             height={661}

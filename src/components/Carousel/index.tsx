@@ -59,7 +59,7 @@ export default function Carousel() {
               className="rounded-[20px] border-3 border-[#0F172A] z-10 w-full h-auto max-w-[420px] lg:max-w-[528px"
             >
               <Image
-                src="/images/carousel/woman.png"
+                src="/images/carousel/woman.webp"
                 width={528}
                 height={415}
                 alt="Carousel image"

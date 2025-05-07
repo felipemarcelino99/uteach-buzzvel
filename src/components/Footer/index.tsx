@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex items-start justify-start flex-col md:flex-row gap-8 md:gap-7 lg:gap-12 pb-[50px]">
           <div className="footer-block">
             <Image
-              src="/images/logo-white.png"
+              src="/images/logo-white.webp"
               alt="Logo uTeach"
               width={175}
               height={35}
@@ -71,7 +71,7 @@ export default function Footer() {
                 <Link href="/" className="flex items-center gap-2">
                   EN
                   <Image
-                    src="/images/icons/world.png"
+                    src="/images/icons/world.webp"
                     alt="Icon World"
                     width={24}
                     height={24}
@@ -82,7 +82,7 @@ export default function Footer() {
                 <Link href="/" className="flex items-center gap-2">
                   EUR
                   <Image
-                    src="/images/icons/euro.png"
+                    src="/images/icons/euro.webp"
                     alt="Icon Euro"
                     width={24}
                     height={24}
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <Link href="/">
                   <Image
-                    src="/images/icons/accessibility.png"
+                    src="/images/icons/accessibility.webp"
                     alt="Icon Accessibility"
                     width={24}
                     height={24}

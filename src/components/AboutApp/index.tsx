@@ -39,7 +39,7 @@ export default function AboutApp() {
               className="shadow-2xl rounded-[20px] ml-auto max-w-[92%]"
             >
               <Image
-                src="/images/video-thumb.png"
+                src="/images/video-thumb.webp"
                 alt="Thumb video"
                 width={600}
                 height={392}

@@ -8,14 +8,14 @@ export default function Join() {
     <section className="w-full bg-[#FACC15] overflow-hidden py-4 md:py-0 md:pt-20 md:pb-14">
       <div className="flex items-center justify-between w-full max-w-full px-4 md:px-0 md:x-0 flex-col md:flex-row gap-8 md:gap-0">
         <Image
-          src="/images/detail-world-left.png"
+          src="/images/detail-world-left.webp"
           alt="Image"
           width={439}
           height={637}
           className="hidden h-auto w-full md:block md:max-w-[360px] lg:max-w-[439px]"
         />
         <Image
-          src="/images/detail-world-top.png"
+          src="/images/detail-world-top.webp"
           alt="Image"
           width={361}
           height={167}
@@ -30,14 +30,14 @@ export default function Join() {
           <ButtonLink label="Sign Up Now" href="/" />
         </div>
         <Image
-          src="/images/detail-world-right.png"
+          src="/images/detail-world-right.webp"
           alt="Image"
           width={426}
           height={600}
           className="h-auto w-full hidden md:block md:max-w-[343px] lg:max-w-[426px]"
         />
         <Image
-          src="/images/detail-world-bottom.png"
+          src="/images/detail-world-bottom.webp"
           alt="Image"
           width={352}
           height={195}

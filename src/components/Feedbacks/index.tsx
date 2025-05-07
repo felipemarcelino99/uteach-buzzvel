@@ -21,7 +21,7 @@ export default function Feedbacks() {
               id="nav_previous"
             >
               <Image
-                src="/images/icons/nav-left.png"
+                src="/images/icons/nav-left.webp"
                 alt="Previous"
                 width={13}
                 height={12}
@@ -29,7 +29,7 @@ export default function Feedbacks() {
             </button>
             <button type="button" className="nav">
               <Image
-                src="/images/icons/nav-right.png"
+                src="/images/icons/nav-right.webp"
                 alt="Next"
                 width={13}
                 height={12}

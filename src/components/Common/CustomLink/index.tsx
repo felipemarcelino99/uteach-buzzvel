@@ -6,7 +6,7 @@ interface ICustomLinkType extends LinkProps {
   color?: string;
   link?: string;
   className?: string;
-};
+}
 
 export default function CustomLink({
   label,
@@ -22,7 +22,7 @@ export default function CustomLink({
     >
       <p>{label}</p>
       <Image
-        src="/images/icons/arrow-right.png"
+        src="/images/icons/arrow-right.webp"
         alt="Icon arrow right"
         width={14}
         height={13}
