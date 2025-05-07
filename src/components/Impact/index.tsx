@@ -12,6 +12,7 @@ export default function Impact() {
               width={64}
               height={64}
               alt="Icon hearth"
+              loading="lazy"
             />
             <h4 className="title title-lg text-center text-[#FACC15] my-4">
               195
@@ -26,6 +27,7 @@ export default function Impact() {
               width={64}
               height={64}
               alt="Icon diamond"
+              loading="lazy"
             />
             <h4 className="title title-lg text-center text-[#FACC15] my-4">
               1M
@@ -40,6 +42,7 @@ export default function Impact() {
               width={64}
               height={64}
               alt="Icon student hat"
+              loading="lazy"
             />
             <h4 className="title title-lg text-center text-[#FACC15] my-4">
               17M

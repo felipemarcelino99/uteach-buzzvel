@@ -43,6 +43,7 @@ export default function AboutApp() {
                 alt="Thumb video"
                 width={600}
                 height={392}
+                loading="lazy"
               />
             </div>
 

@@ -64,6 +64,7 @@ export default function Carousel() {
                 height={415}
                 alt="Carousel image"
                 className="block w-full h-auto max-w-[420px] lg:max-w-[528px]"
+                loading="lazy"
               />
             </div>
           </div>

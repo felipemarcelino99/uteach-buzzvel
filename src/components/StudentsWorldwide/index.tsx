@@ -32,6 +32,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone play"
                   width={20}
                   height={20}
+                  priority={true}
                 />
                 <span className="block text-base md:text-xl lg:text-2xl text-[#2563EB] font-medium">
                   View Demo
@@ -54,6 +55,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone 1"
                   width={25}
                   height={32}
+                  priority={true}
                 />
 
                 <Image
@@ -61,6 +63,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone 1"
                   width={29}
                   height={32}
+                  priority={true}
                 />
 
                 <Image
@@ -68,6 +71,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone 1"
                   width={32}
                   height={32}
+                  priority={true}
                 />
 
                 <Image
@@ -75,6 +79,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone 1"
                   width={27}
                   height={32}
+                  priority={true}
                 />
 
                 <Image
@@ -82,6 +87,7 @@ export default function StudentsWorldwide() {
                   alt="Ícone 1"
                   width={33}
                   height={32}
+                  priority={true}
                 />
               </div>
             </div>
@@ -97,6 +103,7 @@ export default function StudentsWorldwide() {
               alt="Imagem banner"
               width={625}
               height={545}
+              priority={true}
             />
           </div>
         </div>

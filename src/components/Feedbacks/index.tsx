@@ -25,6 +25,7 @@ export default function Feedbacks() {
                 alt="Previous"
                 width={13}
                 height={12}
+                loading="lazy"
               />
             </button>
             <button type="button" className="nav">
@@ -35,6 +36,7 @@ export default function Feedbacks() {
                 height={12}
                 aria-label="Carousel nav next"
                 id="nav_next"
+                loading="lazy"
               />
             </button>
           </div>

@@ -12,6 +12,7 @@ export default function Meet() {
             alt="Image meet"
             width={646}
             height={661}
+            loading="lazy"
           />
           <div className="max-w-full md:max-w-[600px]">
             <h2 className="title title-sm">

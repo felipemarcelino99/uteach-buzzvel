@@ -14,6 +14,7 @@ export default function Footer() {
               alt="Logo uTeach"
               width={175}
               height={35}
+              loading="lazy"
             />
           </div>
           <div className="flex w-full items-start justify-start gap-8 flex-col md:flex-row md:gap-7 lg:gap-12 flex-wrap">
@@ -40,6 +41,7 @@ export default function Footer() {
                                 alt={`${menu.label} icon`}
                                 width={14}
                                 height={13}
+                                loading="lazy"
                               />
                             )}
                           </Link>
@@ -75,6 +77,7 @@ export default function Footer() {
                     alt="Icon World"
                     width={24}
                     height={24}
+                    loading="lazy"
                   />
                 </Link>
               </li>
@@ -86,6 +89,7 @@ export default function Footer() {
                     alt="Icon Euro"
                     width={24}
                     height={24}
+                    loading="lazy"
                   />
                 </Link>
               </li>
@@ -96,6 +100,7 @@ export default function Footer() {
                     alt="Icon Accessibility"
                     width={24}
                     height={24}
+                    loading="lazy"
                   />
                 </Link>
               </li>

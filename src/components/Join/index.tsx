@@ -13,6 +13,7 @@ export default function Join() {
           width={439}
           height={637}
           className="hidden h-auto w-full md:block md:max-w-[360px] lg:max-w-[439px]"
+          loading="lazy"
         />
         <Image
           src="/images/detail-world-top.webp"
@@ -20,6 +21,7 @@ export default function Join() {
           width={361}
           height={167}
           className="block h-auto w-full md:hidden max-w-[361px]"
+          loading="lazy"
         />
         <div className="flex flex-col items-center min-w-[350px]">
           <Title label="Join a world of learning" align="center" />
@@ -35,6 +37,7 @@ export default function Join() {
           width={426}
           height={600}
           className="h-auto w-full hidden md:block md:max-w-[343px] lg:max-w-[426px]"
+          loading="lazy"
         />
         <Image
           src="/images/detail-world-bottom.webp"
@@ -42,6 +45,7 @@ export default function Join() {
           width={352}
           height={195}
           className="h-auto w-full block md:hidden max-w-[352px]"
+          loading="lazy"
         />
       </div>
     </section>

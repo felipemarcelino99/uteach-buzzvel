@@ -19,6 +19,7 @@ export default function Header() {
               alt="Logo uTeach"
               width={103}
               height={35}
+              priority={true}
             />
           </Link>
           <AnimatePresence>
@@ -40,6 +41,7 @@ export default function Header() {
                         alt="Logo uTeach"
                         width={103}
                         height={35}
+                        priority={true}
                       />
                     </Link>
                     <ul className="container-logo">

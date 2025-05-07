@@ -26,6 +26,7 @@ export default function CustomLink({
         alt="Icon arrow right"
         width={14}
         height={13}
+        loading="lazy"
       />
     </Link>
   );

@@ -38,6 +38,7 @@ export default function Features() {
                   width={186}
                   height={158}
                   className="shadow-xl max-w-[186px] w-full block h-auto min-w-[186px] md:min-w-0"
+                  loading="lazy"
                 />
                 <div className="max-w-20 rounded-full shadow-xl absolute bottom-4 right-[-40px]">
                   <Image
@@ -45,6 +46,7 @@ export default function Features() {
                     alt="Image meet"
                     width={80}
                     height={80}
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -56,6 +58,7 @@ export default function Features() {
                 width={304}
                 height={179}
                 className="shadow-xl max-w-[304px] w-full block h-auto min-w-[304px] md:min-w-0"
+                loading="lazy"
               />
               <Image
                 src="/images/img-features-3.webp?v=123"
@@ -63,6 +66,7 @@ export default function Features() {
                 width={232}
                 height={179}
                 className="shadow-xl max-w-[232px] w-full block h-auto min-w-[232px] md:min-w-0"
+                loading="lazy"
               />
             </div>
           </div>
