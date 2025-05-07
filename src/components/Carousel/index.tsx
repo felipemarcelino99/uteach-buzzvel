@@ -24,8 +24,8 @@ export default function Carousel() {
     <div ref={sliderRef} className="keen-slider z-10 w-full">
       {slides.map((n) => (
         <div key={n} className="keen-slider__slide">
-          <div className="flex items-center gap-20">
-            <div className="text-default max-w-[528px] w-full">
+          <div className="flex items-center gap-20 flex-col md:flex-row">
+            <div className="text-default max-w-full md:max-w-[400px] xl:max-w-[528px] w-full">
               <p>
                 Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu
                 mattis est velit in. Nibh in purus sit convallis phasellus ut.
@@ -54,13 +54,14 @@ export default function Carousel() {
             <div
               role="img"
               aria-label="Carousel image"
-              className="rounded-[20px] border-3 border-[#0F172A]"
+              className="rounded-[20px] border-3 border-[#0F172A] z-10 w-full h-auto max-w-[420px] lg:max-w-[528px"
             >
               <Image
                 src="/images/carousel/woman.png"
                 width={528}
                 height={415}
                 alt="Carousel image"
+                className="block w-full h-auto max-w-[420px] lg:max-w-[528px]"
               />
             </div>
           </div>

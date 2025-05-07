@@ -9,6 +9,7 @@ export default function Form({}) {
       method="post"
       className="max-w-[550px] w-full"
       id="fRequest"
+      onSubmit={() => alert("Form submited")}
     >
       <fieldset className="flex flex-col gap-5">
         <label htmlFor="email" className="form-label">
@@ -20,6 +21,7 @@ export default function Form({}) {
           id="email"
           name="email"
           className="form-input"
+          required
         />
       </fieldset>
       <fieldset className="flex flex-col gap-5">
@@ -31,6 +33,7 @@ export default function Form({}) {
           name="message"
           placeholder="What are you say ?"
           className="form-input"
+          required
         ></textarea>
       </fieldset>
       <fieldset className="flex items-center justify-center !mt-8">

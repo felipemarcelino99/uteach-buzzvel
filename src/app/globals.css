@@ -47,7 +47,7 @@ body {
 /* FOOTER STYLES*/
 
 .footer-block {
-  @apply max-w-[calc(100%/6)] w-full;
+  @apply max-w-fit md:max-w-[calc(100%/6)] w-full min-w-32 flex-1;
 }
 
 .footer-block ul {
@@ -156,14 +156,14 @@ footer p {
   .after-carousel-detail::after {
     content: "";
     position: absolute;
-    width: 690px;
-    height: 720px;
-    top: -55px;
-    right: 17%;
+    width: 52%;
+    height: 176%;
+    top: -145px;
+    right: 40px;
     background: url("/images/carousel/detail-carousel.png") center center
       no-repeat;
     background-size: 100% 100%;
-    z-index: 1;
+    pointer-events: none;
   }
 
   .after-carousel-detail::before {
@@ -171,12 +171,50 @@ footer p {
     position: absolute;
     width: 155px;
     height: 155px;
-    bottom: 32px;
-    right: 38.5%;
+    bottom: -50px;
+    right: 29.5%;
     background: url("/images/carousel/detail-carousel-item.png") center center
       no-repeat;
     background-size: 100% 100%;
-    z-index: 21;
+    pointer-events: none;
+    z-index: 11;
+  }
+
+  @media (max-width: 768px) {
+    .after-carousel-detail::after {
+      width: 120%;
+      height: 97%;
+      top: unset;
+      bottom: -22%;
+      right: -50px;
+    }
+
+    .after-carousel-detail::before {
+      width: 155px;
+      height: 155px;
+      bottom: -120px;
+      right: unset;
+      left: 16%;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .after-carousel-detail::after {
+      width: 140%;
+      height: 85%;
+      bottom: -22%;
+      right: -60px;
+    }
+
+    .after-carousel-detail::before {
+      content: "";
+      width: 155px;
+      height: 155px;
+      position: absolute;
+      bottom: -120px;
+      right: unset;
+      left: 16%;
+    }
   }
 
   .before-underline-image {
@@ -210,32 +248,6 @@ footer p {
     height: 64px;
     background: url("/images/title_detail_2.png") no-repeat center center;
     background-size: cover;
-  }
-
-  .bg-world {
-    position: relative;
-  }
-
-  .bg-world::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 84;
-    width: 467px;
-    height: 636px;
-    background: url("/images/detail-world-left.png") no-repeat center center;
-    background-size: auto;
-  }
-
-  .bg-world::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 84;
-    width: 470px;
-    height: 598px;
-    background: url("/images/detail-world-right.png") no-repeat center center;
-    background-size: auto;
   }
 
   .hamburger::after,
