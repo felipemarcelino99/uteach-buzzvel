@@ -43,15 +43,21 @@ export default function RootLayout({
           property="og:description"
           content="Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies."
         />
-        <meta property="og:image" content="https://uteach.com/og-image.png" />
-        <meta property="og:url" content="https://uteach.com" />
+        <meta
+          property="og:image"
+          content="https://uteach-buzzvel.vercel.app/images/og-image.png"
+        />
+        <meta property="og:url" content="https://uteach-buzzvel.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="uTeach |  Educational platform" />
         <meta
           name="twitter:description"
           content="Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies."
         />
-        <meta name="twitter:image" content="https://uteach.com/og-image.png" />
+        <meta
+          name="twitter:image"
+          content="https://uteach-buzzvel.vercel.app/images/og-image.png"
+        />
       </Head>
 
       <body

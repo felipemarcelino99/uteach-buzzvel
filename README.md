@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# uTeach - Buzzvel Frontend Challenge
 
-## Getting Started
+A responsive landing page built using **Next.js 14 App Router**, **Tailwind CSS**, and **TypeScript**. This project is a submission for the Buzzvel frontend challenge, following a provided Figma design.
 
-First, run the development server:
+## 🔧 Tech Stack
+
+- **Next.js 14** (App Router)
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS**
+- **Class Variance Authority (CVA)** – For managing utility class variations cleanly
+- **Framer Motion** – For smooth and declarative animations
+- **Lucide Icons** – Icon library used for consistent and modern UI
+
+## 🌐 Features
+
+- Fully responsive design
+- Semantic and accessible HTML
+- SEO-optimized with `next/head` (Open Graph, title, etc.)
+- Animated UI using Framer Motion
+- Clean and reusable component structure
+
+## 🚀 Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/felipemarcelino99/uteach-buzzvel.git
+cd uteach-buzzvel
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Performance & SEO
 
-## Learn More
+- Optimized for fast load times using Next.js's built-in SSG/SSR
+- Meta tags and Open Graph support via `next/head`
+- Lazy loading and image optimization via `<Image />`
 
-To learn more about Next.js, take a look at the following resources:
+## 🖼️ Open Graph Meta Tags
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```html
+<meta property="og:title" content="uTeach - Learn from the Best" />
+<meta
+  property="og:description"
+  content="A modern and responsive landing page for uTeach."
+/>
+<meta property="og:image" content="/og-image.png" />
+<meta property="og:url" content="https://uteach-buzzvel.vercel.app" />
+<meta name="twitter:card" content="summary_large_image" />
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Place the image `og-image.png` in the `/public` directory.
 
-## Deploy on Vercel
+## 📁 Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+/app          - App router pages and layouts
+/components   - Reusable UI components
+/styles       - Global styles
+/public       - Static assets
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✅ TODOs
+
+- [ ] Add more animations and hover effects
+- [ ] Improve accessibility for keyboard navigation
+- [ ] Add tests for key components
+
+## 📄 License
+
+This project is for evaluation purposes only.

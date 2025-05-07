@@ -47,6 +47,8 @@ export default function Carousel() {
                         ? "w-8 h-2 bg-[#0F172A] rounded-[10px] "
                         : "w-2 h-2  bg-white rounded-full"
                     }`}
+                    aria-label={`Carousel Dot ${idx}`}
+                    id={`dot_${idx}`}
                   />
                 ))}
               </div>

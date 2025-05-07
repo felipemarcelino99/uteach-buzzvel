@@ -14,7 +14,12 @@ export default function Feedbacks() {
             <Title semantic={false} label="What everyone says" type="sm" />
           </div>
           <div className="flex items-center gap-6">
-            <button type="button" className="nav">
+            <button
+              type="button"
+              className="nav"
+              aria-label="Carousel nav previous"
+              id="nav_previous"
+            >
               <Image
                 src="/images/icons/nav-left.png"
                 alt="Previous"
@@ -28,6 +33,8 @@ export default function Feedbacks() {
                 alt="Next"
                 width={13}
                 height={12}
+                aria-label="Carousel nav next"
+                id="nav_next"
               />
             </button>
           </div>

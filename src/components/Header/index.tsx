@@ -34,7 +34,7 @@ export default function Header() {
               >
                 <nav className="w-full max-w-full absolute flex-col items-center md:relative md:flex-row flex justify-between py-4 md:gap-5 md:py-8">
                   <div className="container-logo">
-                    <Link href="" role="img" aria-label="Logo uTeach">
+                    <Link href="" aria-label="Logo uTeach">
                       <Image
                         src="/images/logo.png"
                         alt="Logo uTeach"
@@ -80,6 +80,8 @@ export default function Header() {
             <button
               className={`${isOpened && "menu-open"} hamburger`}
               onClick={() => setIsOpened(!isOpened)}
+              aria-label="Hamburger menu"
+              id="hamburger_menu"
             ></button>
           </div>
         </div>

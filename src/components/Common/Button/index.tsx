@@ -22,6 +22,8 @@ export default function ButtonLink({
     <button
       className={`${widthFull ? "w-full max-w-full" : "w-fit"} ${classes}`}
       {...props}
+      aria-label={label}
+      id="button"
     >
       {label}
     </button>
