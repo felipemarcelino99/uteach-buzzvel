@@ -5,7 +5,7 @@ import { MENU_SECTIONS } from "./constants";
 
 export default function Footer() {
   return (
-    <footer className="pt-12 bg-[#0F172A]">
+    <footer className="pt-12 bg-dark">
       <Indent>
         <div className="flex items-start justify-start flex-col md:flex-row gap-8 md:gap-7 lg:gap-12 pb-[50px]">
           <div className="footer-block">
@@ -31,7 +31,7 @@ export default function Footer() {
                           <Link href="/" className="flex items-center gap-2">
                             {menu.label}
                             {menu?.tag && (
-                              <span className="flex items-center justify-center w-[45px] h-5 bg-[#F3E8FF] text-[#6B21A8] text-xs capitalize rounded-sm">
+                              <span className="flex items-center justify-center w-[45px] h-5 bg-light-purple text-purple text-xs capitalize rounded-sm">
                                 {menu.tag}
                               </span>
                             )}
@@ -54,7 +54,7 @@ export default function Footer() {
             })}
           </div>
         </div>
-        <div className="flex justify-between py-6 border-t-1 border-[#334155] gap-5 flex-col md:flex-row">
+        <div className="flex justify-between py-6 border-t-1 border-cian gap-5 flex-col md:flex-row">
           <div>
             <p>uteach @ 2023. All rights reserved.</p>
           </div>

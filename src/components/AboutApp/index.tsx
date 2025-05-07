@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import CustomLink from "../Common/CustomLink";
 import Indent from "../Common/Indent";
-import CardsCarousel from "./CardsCarousel";
+import CardsCarousel from "../Common/CardsCarousel";
 import { items } from "./constants";
 
 export default function AboutApp() {

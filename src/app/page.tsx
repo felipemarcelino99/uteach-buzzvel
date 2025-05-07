@@ -6,7 +6,7 @@ import Feedbacks from "@/components/Feedbacks";
 import Features from "@/components/Features";
 import Join from "@/components/Join";
 import RequestDemo from "@/components/RequestDemo";
-import CarouselDepoiments from "@/components/CarouselDepoiments";
+import CarouselDepoiments from "@/components/Common/CarouselDepoiments";
 
 export default function Home() {
   return (

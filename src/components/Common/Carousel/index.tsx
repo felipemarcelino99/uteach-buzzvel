@@ -44,7 +44,7 @@ export default function Carousel() {
                     onClick={() => instanceRef.current?.moveToIdx(idx)}
                     className={` ${
                       currentSlide === idx
-                        ? "w-8 h-2 bg-[#0F172A] rounded-[10px] "
+                        ? "w-8 h-2 bg-dark rounded-[10px] "
                         : "w-2 h-2  bg-white rounded-full"
                     }`}
                     aria-label={`Carousel Dot ${idx}`}
@@ -56,7 +56,7 @@ export default function Carousel() {
             <div
               role="img"
               aria-label="Carousel image"
-              className="rounded-[20px] border-3 border-[#0F172A] z-10 w-full h-auto max-w-[420px] lg:max-w-[528px"
+              className="rounded-[20px] border-3 border-dark z-10 w-full h-auto max-w-[420px] lg:max-w-[528px"
             >
               <Image
                 src="/images/carousel/woman.webp"

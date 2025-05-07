@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Join() {
   return (
-    <section className="w-full bg-[#FACC15] overflow-hidden py-4 md:py-0 md:pt-20 md:pb-14">
+    <section className="w-full bg-yellow overflow-hidden py-4 md:py-0 md:pt-20 md:pb-14">
       <div className="flex items-center justify-between w-full max-w-full px-4 md:px-0 md:x-0 flex-col md:flex-row gap-8 md:gap-0">
         <Image
           src="/images/detail-world-left.webp"

@@ -34,7 +34,7 @@ export default function StudentsWorldwide() {
                   height={20}
                   priority={true}
                 />
-                <span className="block text-base md:text-xl lg:text-2xl text-[#2563EB] font-medium">
+                <span className="block text-base md:text-xl lg:text-2xl text-blue font-medium">
                   View Demo
                 </span>
               </Link>
@@ -42,7 +42,7 @@ export default function StudentsWorldwide() {
 
             <div className="flex justify-start w-full max-w-full flex-col mt-11 gap-4 items-start md:items-center md:gap-5 lg:gap-12 md:mt-20 md:flex-row">
               <div>
-                <p className="text-base text-[#475569] leading-[1.4]">
+                <p className="text-base text-dark-gray leading-[1.4]">
                   Trusted by
                   <br />
                   leading companies

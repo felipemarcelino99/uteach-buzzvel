@@ -3,10 +3,10 @@ import { cva } from "class-variance-authority";
 export const buttonVariants = cva("button", {
   variants: {
     variant: {
-      default: "bg-[#EA580C] border-[#EA580C] text-white",
-      black: "bg-[#0F172A] border-[#0F172A] text-white",
-      outlineDefault: "border-[#2563EB] text-[#2563EB]",
-      outlineBlack: "border-[#0F172A] text-[#0F172A]",
+      default: "bg-orange border-orange text-white",
+      black: "bg-dark border-dark text-white",
+      outlineDefault: "border-blue text-blue",
+      outlineBlack: "border-dark text-dark",
     },
     size: {
       default:

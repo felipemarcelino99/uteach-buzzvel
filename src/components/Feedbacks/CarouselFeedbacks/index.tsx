@@ -77,7 +77,7 @@ export default function CarouselFeedbacks({ items }: CarouselType) {
                 <h5 className="text-lg leading-[1.6] text-black">
                   {item.name}
                 </h5>
-                <h6 className="text-base text-[#475569]">{item.role}</h6>
+                <h6 className="text-base text-dark-gray">{item.role}</h6>
               </div>
             </div>
           </div>

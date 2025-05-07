@@ -10,7 +10,7 @@ interface ICustomLinkType extends LinkProps {
 
 export default function CustomLink({
   label,
-  color = "#2563EB",
+  color = "blue",
   className = "",
   ...props
 }: ICustomLinkType) {

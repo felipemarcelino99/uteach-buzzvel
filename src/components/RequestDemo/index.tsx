@@ -4,7 +4,7 @@ import Title from "../Common/Title";
 
 export default function RequestDemo() {
   return (
-    <section className="py-12 md:py-22 bg-[#EA580C]">
+    <section className="py-12 md:py-22 bg-orange">
       <Indent>
         <div>
           <Title

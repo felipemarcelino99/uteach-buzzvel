@@ -10,9 +10,9 @@ type CardType = {
 };
 
 const cardTypeStyles: Record<CardStyle, string> = {
-  [CardStyle.Featured]: "bg-[#F3E8FF] text-[#6B21A8]",
-  [CardStyle.Popular]: "bg-[#DBEAFE] text-[#1E40AF]",
-  [CardStyle.New]: "bg-[#DCFCE7] text-[#166534]",
+  [CardStyle.Featured]: "bg-light-purple text-purple",
+  [CardStyle.Popular]: "bg-light-blue text-purple-blue",
+  [CardStyle.New]: "bg-light-green text-green",
 };
 
 export default function Card({

@@ -3,7 +3,7 @@ import Indent from "../Common/Indent";
 
 export default function Impact() {
   return (
-    <section className="py-12 md:py-20 bg-[#0F172A]">
+    <section className="py-12 md:py-20 bg-dark">
       <Indent>
         <div className="flex gap-12 flex-col items-center justify-center md:items-stretch md:justify-evenly md:gap-4 md:flex-row">
           <div className="flex flex-col justify-between items-center h-full">
@@ -14,10 +14,8 @@ export default function Impact() {
               alt="Icon hearth"
               loading="lazy"
             />
-            <h4 className="title title-lg text-center text-[#FACC15] my-4">
-              195
-            </h4>
-            <p className="text-2xl leading-[1.6] text-center text-[#FACC15]">
+            <h4 className="title title-lg text-center text-yellow my-4">195</h4>
+            <p className="text-2xl leading-[1.6] text-center text-yellow">
               user countries
             </p>
           </div>
@@ -29,10 +27,8 @@ export default function Impact() {
               alt="Icon diamond"
               loading="lazy"
             />
-            <h4 className="title title-lg text-center text-[#FACC15] my-4">
-              1M
-            </h4>
-            <p className="text-2xl leading-[1.6] text-center text-[#FACC15]">
+            <h4 className="title title-lg text-center text-yellow my-4">1M</h4>
+            <p className="text-2xl leading-[1.6] text-center text-yellow">
               valued teachers
             </p>
           </div>
@@ -44,10 +40,8 @@ export default function Impact() {
               alt="Icon student hat"
               loading="lazy"
             />
-            <h4 className="title title-lg text-center text-[#FACC15] my-4">
-              17M
-            </h4>
-            <p className="text-2xl leading-[1.6] text-center text-[#FACC15]">
+            <h4 className="title title-lg text-center text-yellow my-4">17M</h4>
+            <p className="text-2xl leading-[1.6] text-center text-yellow">
               happy students
             </p>
           </div>
